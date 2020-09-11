@@ -32,23 +32,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: pink,
-        body: Center(
-          child: Container(  
-            width: 320,
-            height: 422,              
-            decoration: BoxDecoration(
-              border: Border.all(
-              color: Colors.white,
-              width: 7,
-              )
-            ),
-            child: Stack(
-              children: <Widget>[
+        home: Scaffold(
+            backgroundColor: pink,
+            body: Center(
+                child: Container(
+              width: 320,
+              height: 422,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                color: Colors.white,
+                width: 7,
+              )),
+              child: Stack(children: <Widget>[
                 Container(
                   alignment: Alignment.center,
-                  child: Image.asset('assets/images/bench-image.JPG', width: 320),
+                  child:
+                      Image.asset('assets/images/bench-image.JPG', width: 320),
                 ),
                 Container(
                   alignment: Alignment.center,
@@ -57,18 +56,61 @@ class _MyHomePageState extends State<MyHomePage> {
                     textColor: Colors.black,
                     padding: EdgeInsets.all(10.0),
                     splashColor: blue,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SecondRoute()),
+                      );
+                    },
                     child: Text(
                       "Uyen x Joseph",
                       style: buttonStyle,
                     ),
                   ),
                 )
-              ]
-            ),
-          )
-        )
-      )
-    );
+              ]),
+            ))));
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            backgroundColor: purple,
+            body: Center(
+                child: Container(
+              width: 320,
+              height: 422,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                color: Colors.white,
+                width: 7,
+              )),
+              child: Stack(children: <Widget>[
+                Container(
+                  alignment: Alignment.center,
+                  child:
+                      Image.asset('assets/images/bench-image.JPG', width: 320),
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  child: FlatButton(
+                    color: yellow,
+                    textColor: Colors.black,
+                    padding: EdgeInsets.all(10.0),
+                    splashColor: blue,
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      "Uyen x Joseph",
+                      style: buttonStyle,
+                    ),
+                  ),
+                )
+              ]),
+            ))));
   }
 }
