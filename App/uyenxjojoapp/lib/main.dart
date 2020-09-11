@@ -138,19 +138,12 @@ class ThirdRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: purple,
+        backgroundColor: yellow,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(bottom: 20),
-                child: Text(
-                  "Happy 2nd Anniversary",
-                  style: buttonStyle,
-                ),
-              ),
               Container(
                 width: 320,
                 height: 422,
@@ -160,15 +153,15 @@ class ThirdRoute extends StatelessWidget {
                     width: 7,
                   )
                 ),
-                child: Container(
-                  child:
-                      Image.asset('assets/images/lavender.png'),
-                ),
+                child: Text(
+                    "Our Journey",
+                    style: buttonStyle,
+                )
               ),
               Container(
                 padding: EdgeInsets.only(top: 50),
                 child: FlatButton(
-                  color: yellow,
+                  color: pink,
                   textColor: Colors.black,
                   padding: EdgeInsets.all(10.0),
                   splashColor: blue,
@@ -178,10 +171,7 @@ class ThirdRoute extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => MyApp()),
                     );
                   },
-                  child: Text(
-                    "Our Journey",
-                    style: buttonStyle,
-                  ),
+                  child: poem,
                 ),
               ),
             ],
