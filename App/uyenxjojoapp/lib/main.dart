@@ -153,10 +153,7 @@ class ThirdRoute extends StatelessWidget {
                     width: 7,
                   )
                 ),
-                child: Text(
-                    "Our Journey",
-                    style: buttonStyle,
-                )
+                child: poem,
               ),
               Container(
                 padding: EdgeInsets.only(top: 50),
@@ -171,7 +168,10 @@ class ThirdRoute extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => MyApp()),
                     );
                   },
-                  child: poem,
+                  child: Text(
+                    "Our Journey",
+                    style: buttonStyle,
+                  ),
                 ),
               ),
             ],
