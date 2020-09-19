@@ -17,10 +17,48 @@ TextStyle buttonStyle = new TextStyle(
 
 Text poem = new Text(
   '''
-                          Text1
-                          Text2
-                          Text3''',
-  maxLines: 20,
-  style: TextStyle(
-      fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.black),
+  Thank You
+  For loving me true,
+  For being no one but you,
+  For holding my hand
+  And helping me stand.
+
+  Thank You
+  For never giving up
+  And never getting stuck
+  In the dark times
+  Where only love shines
+
+  Thank you
+  For the kind letters
+  That make me feel better,
+  For putting up with me,
+  And loving what you see.
+
+  Thank you
+  Now and forever.
+  Remember, I'll never
+  Stop loving you.
+  What I say is true;
+  I mean it from my heart,
+  Even when it's dark.
+  I love you.''',
+  textAlign: TextAlign.center,
+  style: TextStyle(fontSize: 16.0),
+);
+
+Text poem2 = new Text(
+  '''
+  Everyday that passes,
+  I feel that I love more''',
+  textAlign: TextAlign.center,
+  style: TextStyle(fontSize: 20.0),
+);
+
+Text poem3 = new Text(
+  '''
+  I am thankful for all the good
+  times we spend together''',
+  textAlign: TextAlign.center,
+  style: TextStyle(fontSize: 20.0),
 );
