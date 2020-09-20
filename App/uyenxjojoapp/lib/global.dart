@@ -50,7 +50,7 @@ Text poem = new Text(
 Text poem2 = new Text(
   '''
   Everyday that passes,
-  I feel that I love more''',
+  I feel that I love you more''',
   textAlign: TextAlign.center,
   style: TextStyle(fontSize: 20.0),
 );
@@ -58,7 +58,7 @@ Text poem2 = new Text(
 Text poem3 = new Text(
   '''
   I am thankful for all the good
-  times we spend together''',
+  times we spent together''',
   textAlign: TextAlign.center,
   style: TextStyle(fontSize: 20.0),
 );
